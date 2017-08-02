@@ -1,5 +1,7 @@
 # NearBuy
 
+[![Build Status](https://travis-ci.org/enpitut2017/near-buy.svg?branch=master)](https://travis-ci.org/enpitut2017/near-buy)
+
 ## Team NearBuy「NearBuy」
 
 ## エレベーターピッチ
