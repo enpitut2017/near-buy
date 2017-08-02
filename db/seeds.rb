@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Item.create(name: "氷結")
+Item.create(name: "ハンドスピナー")
+Item.create(name: "ビックル")
+10.times do |i|
+	Item.create(name: "ハーゲンダッツ #{i}味")
+end
