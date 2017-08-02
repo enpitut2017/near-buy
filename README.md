@@ -13,7 +13,7 @@
 ## URL
 
 - [Service URL](https://enpit-nearbuy.herokuapp.com/)
-- [CI URL(Coming soon!)](#)
+- [CI URL](https://travis-ci.org/enpitut2017/near-buy)
 
 ## Member
 
