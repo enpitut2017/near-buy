@@ -18,8 +18,4 @@ ActiveRecord::Schema.define(version: 20170802045854) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "titles", force: :cascade do |t|
-    t.string "name"
-  end
-
 end
