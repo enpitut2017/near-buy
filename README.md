@@ -1,5 +1,7 @@
 # NearBuy
 
+[![Build Status](https://travis-ci.org/enpitut2017/near-buy.svg?branch=master)](https://travis-ci.org/enpitut2017/near-buy)
+
 ## Team NearBuy「NearBuy」
 
 ## エレベーターピッチ
@@ -13,7 +15,7 @@
 ## URL
 
 - [Service URL](https://enpit-nearbuy.herokuapp.com/)
-- [CI URL(Coming soon!)](#)
+- [CI URL](https://travis-ci.org/enpitut2017/near-buy)
 
 ## Member
 
