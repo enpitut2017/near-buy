@@ -1,24 +1,40 @@
-# README
+# NearBuy
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Team NearBuy「NearBuy」
 
-Things you may want to cover:
+## エレベーターピッチ
 
-* Ruby version
+「欲しいと思った商品が店舗で探しても見つからない」問題を解決したい。
+「期間限定商品や需要に対して供給が少ない商品、そもそも需要が少ない商品などをいち早く手に入れたい」という方向けに、「欲しいものが買える場所、教えます。」を実現するサービス、「NearBuy」です。
 
-* System dependencies
+これは、商品やその在庫量を登録することで、欲しいものを取り扱う近くの店舗を検索することができ、
+ネットショッピングと比べて欲しいと思ったその日のうちに手に入るという優位性があります。
 
-* Configuration
+## URL
 
-* Database creation
+- [Service URL](https://enpit-nearbuy.herokuapp.com/)
+- [CI URL(Coming soon!)](#)
 
-* Database initialization
+## Member
 
-* How to run the test suite
+- 高橋 <[shuuji3](https://github.com/shuuji3)>
+- 漆山 <[urushiyama](https:/github.com/urushiyama)>
+- 長谷川 <[HasegawaYohei](https:/github.com/HasegawaYohei)>
+- 藤谷 <[FujitaniTomoki](https:/github.com/FujitaniTomoki)>
+- 水野 <[3zUn0](https:/github.com/3zUn0)>
+- 小林 <[kajyuuen](https://github.com/kajyuuen)>
 
-* Services (job queues, cache servers, search engines, etc.)
+## Setup
 
-* Deployment instructions
+### Requirements
 
-* ...
+  - sqlite3 (development, test)
+  - postgresql (production)
+
+### Get Started
+
+```console
+$ git clone git@github.com:enpitut2017/near-buy.git
+$ bundle install
+$ bundle exec rails server
+```
