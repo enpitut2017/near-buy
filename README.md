@@ -1,17 +1,28 @@
 # NearBuy
 
-## 欲しいものが買える場所、教えます。
+## Team NearBuy「NearBuy」
 
-NearBuy は、「今すぐ欲しい商品がお店で見つからない！」問題を解決したい、
+## エレベーターピッチ
 
-- 期間限定商品
-- 需要に対して供給が少ない商品
-- そもそも需要が少ない商品
+「欲しいと思った商品が店舗で探しても見つからない」問題を解決したい。
+「期間限定商品や需要に対して供給が少ない商品、そもそも需要が少ない商品などをいち早く手に入れたい」という方向けに、「欲しいものが買える場所、教えます。」を実現するサービス、「NearBuy」です。
 
-を、いち早く手に入れたい方向けのサービスです。
+これは、商品やその在庫量を登録することで、欲しいものを取り扱う近くの店舗を検索することができ、
+ネットショッピングと比べて欲しいと思ったその日のうちに手に入るという優位性があります。
 
-このサービスは、利用者が欲しい商品を検索すると、事前に他の利用者が登録した近くの店舗の在庫量
-（十分：○、少なめ：△、売り切れ：×、未登録：？）を表示することで、利用者がネットショッピングよりも早く、 _いま欲しいもの_ を購入することをサポートします。
+## URL
+
+- [Service URL](https://enpit-nearbuy.herokuapp.com/)
+- [CI URL(Coming soon!)](#)
+
+## Member
+
+- 高橋 <[shuuji3](https://github.com/shuuji3)>
+- 漆山 <[urushiyama](https:/github.com/urushiyama)>
+- 長谷川 <[HasegawaYohei](https:/github.com/HasegawaYohei)>
+- 藤谷 <[FujitaniTomoki](https:/github.com/FujitaniTomoki)>
+- 水野 <[3zUn0](https:/github.com/3zUn0)>
+- 小林 <[kajyuuen](https://github.com/kajyuuen)>
 
 ## Setup
 
