@@ -6,6 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Item.delete_all
+
 Item.create(name: "氷結")
 Item.create(name: "ハンドスピナー")
 Item.create(name: "ビックル")
@@ -14,10 +16,37 @@ Item.create(name: "ビックル")
 end
 # id:1-13
 
-10.times do |j|
-	Shop.create(name: 'shop#{j}', lat: "#{j*1.2}", lng: "#{j*2}")
+Shop.delete_all
+
+shop_names = [
+    "ミニストップつくば天久保店",
+		"セブンイレブンつくば平塚店",
+		"セブン-イレブンつくば天久保４丁目店",
+		"ミニストップつくば栗原店",
+		"セブン-イレブンつくば春日４丁目店",
+		"セブン-イレブンつくば桜柴崎店",
+		"ファミリーマートつくば春日四丁目店",
+		"セブン-イレブンつくば西平塚店",
+		"ファミリーマートつくば花畑店",
+		"ファミリーマート筑波記念病院前店",
+		"セブン‐イレブン つくば松見公園店",
+		"ファミリーマートつくば天久保一丁目店",
+		"セブン-イレブンつくば学園の森２丁目店",
+		"セブン-イレブンつくば吾妻３丁目店",
+		"ミニストップ つくば研究学園店",
+		"ファミリーマート つくば研究学園店",
+		"コンビニエンスストア · 研究学園４丁目２−１５",
+		"コンビニエンスストア · 吾妻１丁目６−１",
+		"ローソン つくば春日三丁目店",
+		"セブン‐イレブン つくば北大通り店",
+]
+
+shop_names.length.times do |i|
+	Shop.create(name: shop_names[i], lat: "#{i*1.2}", lng: "#{i*2}")
 end
 # id:1-10
+
+ItemShop.delete_all
 
 ItemShop.create(item_id:1 , shop_id:1 , stock: 0)
 ItemShop.create(item_id:1 , shop_id:3 , stock: 1)
