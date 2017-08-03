@@ -2,7 +2,10 @@
   .col-md-10.col-md-offset-1
     h2.text-center
       | 商品一覧
-  .col-md-4.col-md-offset-4
-    - @items.each do |item|
-      p.text-center
-        = link_to item.name
+  - @items.each do |item|
+    .col-sm-3.col-md-2
+      .card style=("margin-top: 15px") 
+        = image_tag("sampleItemImage.jpg", :class => "card-img-top img-responsive")
+        .card-block
+          h4.card-title= item.name
+          = link_to "詳細ページヘ", item, {:class => "btn btn-primary text-center"}
