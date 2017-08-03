@@ -16,7 +16,7 @@ end
 
 10.times do |j|
 	Shop.create(name: 'shop#{j}', lat: "#{j*1.2}", lng: "#{j*2}")
-}
+end
 # id:1-10
 
 ItemShop.create(item_id:1 , shop_id:1 , stock: 0)
