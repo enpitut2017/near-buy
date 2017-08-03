@@ -1,0 +1,11 @@
+<h1>Items#show</h1>
+<h2><%= @item.name %></h2>
+
+<% if @item.item_shops %>
+    <% @item.item_shops.each do |item_shop| %>
+    <p>
+      <%= item_shop.shop.name %>
+      <%= item_shop.stock %>
+    </p>
+    <% end %>
+<% end %>
