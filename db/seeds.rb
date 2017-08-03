@@ -7,6 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Item.delete_all
+Shop.delete_all
+ItemShop.delete_all
 
 Item.create(name: "氷結")
 Item.create(name: "ハンドスピナー")
@@ -16,7 +18,6 @@ Item.create(name: "ビックル")
 end
 # id:1-13
 
-Shop.delete_all
 
 shop_names = [
     "ミニストップつくば天久保店",
@@ -45,8 +46,6 @@ shop_names.length.times do |i|
 	Shop.create(name: shop_names[i], lat: "#{i*1.2}", lng: "#{i*2}")
 end
 # id:1-10
-
-ItemShop.delete_all
 
 ItemShop.create(item_id:1 , shop_id:1 , stock: 0)
 ItemShop.create(item_id:1 , shop_id:3 , stock: 1)
