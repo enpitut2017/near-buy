@@ -9,5 +9,28 @@ html
     meta charset="utf-8" /
     meta content="IE=edge" http-equiv="X-UA-Compatible" /
     meta content="width=device-width, initial-scale=1" name="viewport" /
-  body.container
-    = yield
+  body
+    nav.navbar.navbar-inverse.border-radius-0
+      .container-fluid
+        .navbar-header
+          button.navbar-toggle.collapsed data-target="#navbar" data-toggle="collapse" type="button"
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          = link_to "Near Buy", {:controller => "items", :action => "index"}, {:class => "navbar-brand"}
+          form.navbar-form.col-xs-10 role="search"
+            .form-group
+              .input-group
+                input.form-control placeholder="商品を検索" type="text" /
+                span.input-group-btn
+                  button.btn.btn-default type="submit"  検索
+
+        #navbar.collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li
+              a href="#"  商品一覧
+            li
+              a href="#"  商品登録
+    .container
+      = yield
