@@ -1,6 +1,9 @@
-= form_for @item, :url => { :action => 'sorted_shops' }, :remote => true, :id => 'latlng_form' do |f|
-  = label_tag(:lat, "Latitude")
-  = text_field_tag(:lat)
-  = label_tag(:lng, "Longitude")
-  = text_field_tag(:lng)
-  = submit_tag("Search")
+.col-md-offset-1.mg-tp-15
+  = form_for @item, :url => { :action => 'sorted_shops' }, :html => {class: "form-inline"}, :remote => true, :id => 'latlng_form' do |f|
+    .form-group
+      .col-sm-12
+        = label_tag(:lat, "緯度")
+        = text_field_tag(:lat)
+        = label_tag(:lng, "経度", class: "mg-l-5")
+        = text_field_tag(:lng)
+        = submit_tag("検索", class: "btn btn-sm btn-success mg-l-5")
