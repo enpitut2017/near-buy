@@ -4,8 +4,9 @@
       | 商品一覧
   - @items.each do |item|
     .col-sm-3.col-md-2
-      .card style=("margin-top: 15px") 
+      .card style=("margin-top: 15px")
         = image_tag("sampleItemImage.jpg", :class => "card-img-top img-responsive")
         .card-block
-          h4.card-title= item.name
-          = link_to "詳細ページヘ", item, {:class => "btn btn-primary text-center"}
+          h4.card-title= link_to item.name, item
+          /= link_to "詳細ページヘ", item, {:class => "btn btn-primary text-center"}
+          p 商品の説明文
