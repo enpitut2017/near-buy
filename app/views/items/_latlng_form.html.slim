@@ -1,0 +1,6 @@
+= form_for @item, :url => { :action => 'sorted_shops' }, :remote => true, :id => 'latlng_form' do |f|
+  = label_tag(:lat, "Latitude")
+  = text_field_tag(:lat)
+  = label_tag(:lng, "Longitude")
+  = text_field_tag(:lng)
+  = submit_tag("Search")
