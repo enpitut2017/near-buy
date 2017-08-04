@@ -10,9 +10,9 @@ Item.delete_all
 Shop.delete_all
 ItemShop.delete_all
 
-Item.create(name: "氷結")
-Item.create(name: "ハンドスピナー")
-Item.create(name: "ビックル")
+Item.create(name: "氷結", price: 130, manufacturer: 'キリン')
+Item.create(name: "ハンドスピナー", price: 1399, manufacturer: 'Xingmeng')
+Item.create(name: "ビックル", price: 100, manufacturer: 'SUNTORY')
 10.times do |i|
 	Item.create(name: "ハーゲンダッツ #{i}味")
 end
