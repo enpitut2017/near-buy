@@ -2,7 +2,7 @@ require 'test_helper'
 
 class ItemTest < ActiveSupport::TestCase
   test 'valid item' do
-    item = Item.new(name: 'item01')
+    item = Item.new(name: 'item01', price: 0)
     assert item.valid?
   end
 
