@@ -1,9 +1,13 @@
-h1 Items#show
-h2= @item.name
-- if @item.item_shops
-  - @item.item_shops.each do |item_shop|
-    p
-      = item_shop.shop.name
-      = item_shop.stock
+.row.mg-tp-30
+  .col-md-3.col-md-offset-1
+    = image_tag("sampleItemImage.jpg", :class => "card-img-top img-responsive")
+  .col-md-7#shopInfo
+    h3 = @item.name
+    - @item.item_shops.each do |item_shop|
+      p
+        = item_shop.shop.name
+        = item_shop.stock
 = render :partial => 'latlng_form'
 div#shop-list
+javascript:
+  replaceStockString();

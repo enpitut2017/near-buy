@@ -4,8 +4,23 @@
 # model remove the '{}' from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-one: {}
-# column: value
-#
-two: {}
-# column: value
+one:
+  name: 氷結
+  price: 130
+  manufacturer: キリン
+
+two:
+  name: ハンドスピナー
+  price: 1399
+  manufacturer: Xingmeng
+
+three:
+  name: ビックル
+  price: 100
+  manufacturer: SANTORY
+
+<% 10.times do |id| %>
+test_item_<%= id %>:
+  name: ハーゲンダッツ<%= id %>味
+  price: <%= id*10 %>
+<% end %>
