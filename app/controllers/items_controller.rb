@@ -27,6 +27,10 @@ class ItemsController < ApplicationController
     end
   end
 
+  def json_test
+    render :json => Item.all
+  end
+
   private
 
   def shop_params
