@@ -14,9 +14,27 @@ class ItemsController < ApplicationController
     @shops = Shop.distance(lat, lng)
   end
 
+  def new
+    @item = Item.new
+  end
+
+  def create
+    @item = Item.new(item_params)
+    if @item.save
+      redirect_to @item
+    else
+
+    end
+  end
+
   private
 
   def shop_params
     params.require(:shop).permit(:lat, :lng)
   end
+
+  def item_params
+    params.require(:item).permit(:name, :price, :manufacturer)
+  end
+
 end
