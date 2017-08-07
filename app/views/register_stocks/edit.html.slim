@@ -1,2 +1,4 @@
-h1 RegisterStocks#edit
-p Find me in app/views/register_stocks/edit.html.erb
+= form_with url: { action: :update } do |f|
+  = f.label :stock
+  = collection_radio_buttons(:item_shop, :stock, ItemShop.stocks, :first, :first)
+  = f.submit
