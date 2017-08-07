@@ -26,10 +26,16 @@ class ItemsController < ApplicationController
   def create
     @item = Item.new(item_params)
     if @item.save
+      flash.now[:success] = "登録完了"
       redirect_to @item
     else
-
+      render 'new'
     end
+  end
+
+  def search
+    name = search_params[:name]
+    @items = Item.search_by_name(name)
   end
 
   private
@@ -42,4 +48,7 @@ class ItemsController < ApplicationController
     params.require(:item).permit(:name, :price, :manufacturer)
   end
 
+  def search_params
+    params.permit(:name)
+  end
 end
