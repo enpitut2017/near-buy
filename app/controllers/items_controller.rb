@@ -15,7 +15,7 @@ class ItemsController < ApplicationController
       @shops = Shop.distance(lat, lng)
     else
       @shops = Shop.all
-    else
+    end
   end
 
   def new
