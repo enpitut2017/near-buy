@@ -21,9 +21,10 @@ class ItemsController < ApplicationController
   def create
     @item = Item.new(item_params)
     if @item.save
+      flash.now[:success] = "登録完了"
       redirect_to @item
     else
-
+      render 'new'
     end
   end
 
