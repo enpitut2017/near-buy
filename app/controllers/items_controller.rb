@@ -11,7 +11,7 @@ class ItemsController < ApplicationController
     lat = params[:lat]
     lng = params[:lng]
     @id = params[:id]
-    if lat && lng
+    if lat.present? && lng.present?
       @shops = Shop.distance(lat, lng)
     else
       @shops = Shop.all
