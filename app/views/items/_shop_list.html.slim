@@ -1,9 +1,8 @@
 .col-md-offset-1.mg-tp-15
   table.table.table-striped
     - @shops.each do |shop|
-      - if not shop.item_shops.find_by(item_id: @id).nil?
-        tr
-          td
-            = shop.name
-          td
-            = shop.item_shops.find_by(item_id: @id).stock
+      tr
+        td
+          = shop.name
+        td
+          = shop.item_shops.find_by(item_id: @id).stock
