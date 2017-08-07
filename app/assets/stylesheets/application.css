@@ -14,8 +14,20 @@
  *= require_tree .
  *= require_self
  */
+ .mg-l-5 {
+   margin-left: 5px;
+ }
+
+.mg-tp-15 {
+  margin-top: 15px;
+}
+
 .mg-tp-30 {
   margin-top: 30px;
+}
+
+.border-radius-0 {
+  border-radius: 0;
 }
 
  .card {

@@ -1,13 +1,10 @@
 .row.mg-tp-30
-  .col-md-3.col-md-offset-1
+  .col-sm-8.col-sm-offset-2.col-md-offset-1
+    h3 = @item.name
+  .col-sm-8.col-sm-offset-2.col-md-3.col-md-offset-1
     = image_tag("sampleItemImage.jpg", :class => "card-img-top img-responsive")
   .col-md-7#shopInfo
-    h3 = @item.name
-    - @item.item_shops.each do |item_shop|
-      p
-        = item_shop.shop.name
-        = item_shop.stock
+    p 商品の説明が欲しい...
 = render :partial => 'latlng_form'
+/= render :partial => 'shop_list'
 div#shop-list
-javascript:
-  replaceStockString();
