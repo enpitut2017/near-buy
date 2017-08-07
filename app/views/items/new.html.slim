@@ -1,8 +1,8 @@
 h1
   | 商品の登録
-table.table
-  = form_for @item, :url => { :action => :create },:id => 'item_new_form' do |f|
-    = render 'shared/error_messages', object: f.object
+= form_for @item, :url => { :action => :create },:id => 'item_new_form' do |f|
+  = render 'shared/error_messages', object: f.object
+  table.table
     tr
       td
         = f.label(:name, "商品名")
