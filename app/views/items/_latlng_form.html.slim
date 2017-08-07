@@ -1,9 +1,9 @@
 .col-md-offset-1.mg-tp-15
-  = form_for @item, :url => { :action => 'sorted_shops' }, :html => {class: "form-inline"}, :remote => true, :id => 'latlng_form' do |f|
-    .form-group
-      .col-sm-12
-        = label_tag(:lat, "緯度")
-        = text_field_tag(:lat)
-        = label_tag(:lng, "経度", class: "mg-l-5")
-        = text_field_tag(:lng)
-        = submit_tag("検索", class: "btn btn-sm btn-success mg-l-5")
+  = form_for @item, :url => { :action => 'sorted_shops' }, :html => {class: "form-inline"},
+          :remote => true, :id => 'latlng_form' do |f|
+    = render 'shared/error_messages', object: f.object
+    label.col-form-label.mg-l-5 for="lat" 緯度
+    input#lat.form-control.mg-l-5 placeholder="" type="text" name="lat" value="#{@name}"
+    label.col-form-label.mg-l-5 for="lng" 経度
+    input#lng.form-control.mg-l-5 placeholder="" type="text" name="lng" value="#{@name}"
+    button.btn.btn-success.mg-l-5 type="submit"  検索
