@@ -8,4 +8,6 @@ class Item < ApplicationRecord
                       only_integer: true,
                       greater_than_or_equal_to: 0
                     }
+
+  scope :search_by_name, ->(name) { where('like(?)', "%#{name}%") }
 end

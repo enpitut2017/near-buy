@@ -27,6 +27,11 @@ class ItemsController < ApplicationController
     end
   end
 
+  def search
+    name = search_params[:name]
+    @items = Item.where('name like(?)', "%#{name}%")
+  end
+
   private
 
   def shop_params
