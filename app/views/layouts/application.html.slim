@@ -19,19 +19,19 @@ html
             span.icon-bar
             span.icon-bar
           = link_to "Near Buy", {:controller => "items", :action => "index"}, {:class => "navbar-brand"}
-          form.navbar-form.col-xs-10 role="search"
+          form.navbar-form.col-xs-10 role="search" action="#{items_search_path}"
             .form-group
               .input-group
-                input.form-control placeholder="商品を検索" type="text" /
+                input.form-control placeholder="商品を検索" type="text" name="name" value="#{@name}" /
                 span.input-group-btn
                   button.btn.btn-default type="submit"  検索
 
         #navbar.collapse.navbar-collapse
           ul.nav.navbar-nav
             li
-              a href="#"  商品一覧
+              = link_to "商品一覧", items_path
             li
-              a href="#"  商品登録
+              = link_to "商品登録", {:controller => "items", :action => "new"}
     .container
       - flash.each do |message_type, message|
         = content_tag(:div, message, class: "alert alert-#{message_type}")
