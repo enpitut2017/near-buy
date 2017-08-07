@@ -4,13 +4,19 @@
       tr
         td
           = shop.name
-        td
-          - stock = shop.item_shops.find_by(item_id: @id).stock
-          - if stock == 'full'
-            '○
-          - elsif stock == 'few'
-            '△
-          - elsif stock == 'out_of'
-            '×
-        td
-          a.btn.btn-primary[href="/stocks/#{@id}/#{shop.id}/edit"] 在庫更新
+        - if shop.item_shops.find_by(item_id: @id).present?
+          td
+            - stock = shop.item_shops.find_by(item_id: @id).stock
+            - if stock == 'full'
+              '○
+            - elsif stock == 'few'
+              '△
+            - elsif stock == 'out_of'
+              '×
+          td
+            a.btn.btn-primary[href="/stocks/#{@id}/#{shop.id}/edit"] 在庫更新
+        - else
+          td
+            | 未登録
+          td
+            a.btn.btn-primary[href="/stocks/#{@id}/#{shop.id}/new"] 在庫登録

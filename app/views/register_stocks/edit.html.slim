@@ -1,4 +1,2 @@
-= form_with url: { action: :update } do |f|
-  = f.label :stock
-  = collection_radio_buttons(:item_shop, :stock, ItemShop.stocks, :first, :first)
-  = f.submit
+- provide(:action, :update)
+= render 'stock_form'
