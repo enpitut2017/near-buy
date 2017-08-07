@@ -1,10 +1,18 @@
 .row.mg-tp-30
   .col-sm-8.col-sm-offset-2.col-md-offset-1
-    h3 = @item.name
-  .col-sm-8.col-sm-offset-2.col-md-3.col-md-offset-1
-    = image_tag("sampleItemImage.jpg", :class => "card-img-top img-responsive")
-  .col-md-7#shopInfo
-    p 商品の説明が欲しい...
-= render :partial => 'latlng_form'
+    h2 = @item.name
+    p
+      'メーカー:
+      - if @item.manufacturer.present?
+        = @item.manufacturer
+      - else
+        '-  .col-sm-8.col-sm-offset-2.col-md-3.col-md-offset-1
+    p
+      '価格:
+      = number_to_currency @item.price, unit: " 円", format: "%n%u", precision: 0
+    = image_tag("sampleItemImage.jpg", :class => "col-md-7 card-img-top img-responsive mg-tp-15")
+.row
+  .col-md-8.mg-tp-30#shopInfo
+    = render :partial => 'latlng_form'
 /= render :partial => 'shop_list'
 div#shop-list
