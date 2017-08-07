@@ -28,8 +28,8 @@ class ItemsController < ApplicationController
   end
 
   def search
-    name = search_params[:name]
-    @items = Item.where('name like(?)', "%#{name}%")
+    name = params[:name]
+    @items = Item.search_by_name(name)
   end
 
   private
@@ -42,4 +42,7 @@ class ItemsController < ApplicationController
     params.require(:item).permit(:name, :price, :manufacturer)
   end
 
+  def search_params
+    params.require(:item).permit(:name)
+  end
 end
