@@ -36,8 +36,8 @@ class ItemsController < ApplicationController
   end
 
   def search
-    name = search_params[:name]
-    @items = Item.search_by_name(name)
+    @name = search_params[:name]
+    @items = Item.search_by_name(@name)
   end
 
   private

@@ -7,7 +7,8 @@ class Shop < ApplicationRecord
   validates :lng, presence: true
 
   def self.distance(request_lat, request_lng)
-    order("ABS(lat - #{request_lat} ) * ABS(lat - #{request_lat} ) +
-           ABS(lng - #{request_lng} ) * ABS(lng - #{request_lng} )")
+    order("ABS(lat - (?) ) * ABS(lat - (?) ) +
+           ABS(lng - (?) ) * ABS(lng - (?) )",
+           request_lat, request_lat, request_lng, request_lng)
   end
 end
