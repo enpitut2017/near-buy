@@ -28,7 +28,7 @@ class ItemsController < ApplicationController
   end
 
   def search
-    name = params[:name]
+    name = search_params[:name]
     @items = Item.search_by_name(name)
   end
 
@@ -43,6 +43,6 @@ class ItemsController < ApplicationController
   end
 
   def search_params
-    params.require(:item).permit(:name)
+    params.permit(:name)
   end
 end
