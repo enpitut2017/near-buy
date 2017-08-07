@@ -4,6 +4,12 @@
       tr
         td
           = shop.name
+        td
+          | 緯度
+          = shop.lat
+        td
+          | 経度
+          = shop.lng
         - if shop.item_shops.find_by(item_id: @id).present?
           td
             - stock = shop.item_shops.find_by(item_id: @id).stock
