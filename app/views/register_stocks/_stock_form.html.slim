@@ -1,0 +1,11 @@
+= form_with url: { action: yield(:action) } do |f|
+  h2.control-label
+    = f.label :stock
+  div.panel.panel-default
+    div.panel-body
+      - ItemShop.stocks.each do |stock_name|
+        div
+          = f.label "#{stock_name[0]}"
+          = f.radio_button :stock, stock_name[0]
+      div.pull-right
+        = f.submit class:'btn btn-primary'

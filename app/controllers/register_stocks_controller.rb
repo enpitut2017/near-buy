@@ -68,6 +68,6 @@ class RegisterStocksController < ApplicationController
   end
   
   def item_shop_params
-    params.require(:item_shop).permit(:stock)
+    params.permit(:stock)
   end
 end
