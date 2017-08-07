@@ -5,6 +5,12 @@
         td
           = shop.name
         td
+          | 緯度
+          = shop.lat
+        td
+          | 経度
+          = shop.lng
+        td
           - stock = shop.item_shops.find_by(item_id: @id).stock
           - if stock == 'full'
             '○
