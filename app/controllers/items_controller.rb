@@ -24,7 +24,6 @@ class ItemsController < ApplicationController
       flash.now[:success] = "登録完了"
       redirect_to @item
     else
-      # flash.now[:danger] = "登録エラー"
       render 'new'
     end
   end
