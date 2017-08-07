@@ -6,3 +6,5 @@
           = shop.name
         td
           = shop.item_shops.find_by(item_id: @id).stock
+        td
+          a.btn.btn-primary[href="/stocks/#{@id}/#{shop.id}/edit"] 在庫更新
