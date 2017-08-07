@@ -19,10 +19,10 @@ html
             span.icon-bar
             span.icon-bar
           = link_to "Near Buy", {:controller => "items", :action => "index"}, {:class => "navbar-brand"}
-          form.navbar-form.col-xs-10 role="search"
+          form.navbar-form.col-xs-10 role="search" action="/items/search"
             .form-group
               .input-group
-                input.form-control placeholder="商品を検索" type="text" /
+                input.form-control placeholder="商品を検索" type="text" name="name" value="#{@name}" /
                 span.input-group-btn
                   button.btn.btn-default type="submit"  検索
 
