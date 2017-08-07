@@ -1,0 +1,4 @@
+= form_with url: { action: :create } do |f|
+  = f.label :stock
+  = f.collection_radio_buttons(:stock, ItemShop.stocks, :first, :first)
+  = f.submit

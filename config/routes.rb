@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'stocks/:item_id/:shop_id/new', to: 'register_stocks#new'
+  post 'stocks/:item_id/:shop_id/new', to: 'register_stocks#create'
   get 'stocks/:item_id/:shop_id/edit', to: 'register_stocks#edit'
   post 'stocks/:item_id/:shop_id', to: 'register_stocks#update'
 
