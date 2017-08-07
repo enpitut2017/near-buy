@@ -3,7 +3,7 @@
           :remote => true, :id => 'latlng_form' do |f|
     = render 'shared/error_messages', object: f.object
     label.col-form-label.mg-l-5 for="lat" 緯度
-    input#lat.form-control.mg-l-5 placeholder="" type="text" name="name" value="#{@name}"
+    input#lat.form-control.mg-l-5 placeholder="" type="text" name="lat" value="#{@name}"
     label.col-form-label.mg-l-5 for="lng" 経度
-    input#lng.form-control.mg-l-5 placeholder="" type="text" name="name" value="#{@name}"
+    input#lng.form-control.mg-l-5 placeholder="" type="text" name="lng" value="#{@name}"
     button.btn.btn-success.mg-l-5 type="submit"  検索
