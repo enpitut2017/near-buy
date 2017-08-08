@@ -10,7 +10,7 @@
     p
       '価格:
       = number_to_currency @item.price, unit: " 円", format: "%n%u", precision: 0
-    = image_tag("sampleItemImage.jpg", :class => "col-md-7 card-img-top img-responsive mg-tp-15")
+    = image_tag("https://placehold.jp/170x130.png?text=NO IMAGE", :class => "col-md-7 card-img-top img-responsive mg-tp-15")
 .row
   .col-md-8.mg-tp-30#shopInfo
     = render :partial => 'latlng_form'
