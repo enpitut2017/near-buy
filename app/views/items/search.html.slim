@@ -9,4 +9,11 @@
         .card-block
           h4.card-title= link_to item.name, item
           /= link_to "詳細ページヘ", item, {:class => "btn btn-primary text-center"}
-          p 商品の説明文
+          p
+            span
+              - if item.manufacturer.present?
+                = item.manufacturer
+              - else
+                '-
+            span.pull-right
+              = number_to_currency item.price, unit: " 円", format: "%n%u", precision: 0
