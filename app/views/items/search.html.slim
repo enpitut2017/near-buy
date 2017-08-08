@@ -5,7 +5,7 @@
   - @items.each do |item|
     .col-sm-3.col-md-2
       .card style=("margin-top: 15px")
-        = image_tag("sampleItemImage.jpg", :class => "card-img-top img-responsive")
+        = image_tag("https://placehold.jp/170x130.png?text=NO IMAGE", :class => "card-img-top img-responsive")
         .card-block
           h4.card-title= link_to item.name, item
           /= link_to "詳細ページヘ", item, {:class => "btn btn-primary text-center"}

@@ -10,7 +10,7 @@ Item.delete_all
 Shop.delete_all
 ItemShop.delete_all
 
-Item.create(name: "白いラ・フランス", price: 1404, manufacturer: 'キリン')
+Item.create(name: "白いラ・フランス", price: 1404, manufacturer: '鍵や')
 Item.create(name: "MixMart Hand Spinner", price: 3099, manufacturer: 'MixMart')
 Item.create(name: "Bikkle", price: 100, manufacturer: 'SUNTORY')
 Item.create(name: "ハーゲンダッツ ジャポネ<ダブル抹茶~練乳黒みつ~>", price: 360, manufacturer: 'Haagen-Dazs')
