@@ -20,10 +20,10 @@
 ## Member
 
 - 高橋 <[shuuji3](https://github.com/shuuji3)>
-- 漆山 <[urushiyama](https:/github.com/urushiyama)>
-- 長谷川 <[HasegawaYohei](https:/github.com/HasegawaYohei)>
-- 藤谷 <[FujitaniTomoki](https:/github.com/FujitaniTomoki)>
-- 水野 <[3zUn0](https:/github.com/3zUn0)>
+- 漆山 <[urushiyama](https://github.com/urushiyama)>
+- 長谷川 <[HasegawaYohei](https://github.com/HasegawaYohei)>
+- 藤谷 <[FujitaniTomoki](https://github.com/FujitaniTomoki)>
+- 水野 <[3zUn0](https://github.com/3zUn0)>
 - 小林 <[kajyuuen](https://github.com/kajyuuen)>
 
 ## Setup
